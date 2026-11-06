@@ -1,9 +1,9 @@
 cask "mefinder" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.6.0"
-  sha256 arm:   "9a505a443c23304720f6da96587b4f8836a11cabafb8808147568b47ca6d073d",
-         intel: "b168c654ce28a1d1bbdb2796261bf59a9aec14f7f86ef99a38a9af34cffe43bc"
+  version "0.6.1"
+  sha256 arm:   "c2a31f55ae59dd0896f4a18a6d9883426817caa8b10c3e440eccd0976538c6d9",
+         intel: "9ff2033d02cf6996d034d667e50fb8e1458dd2a3e48f440062c7a152f6b01087"
 
   url "https://github.com/sabercomo/MEFinder/releases/download/v#{version}/MEFinder-v#{version}-macos-#{arch}.dmg"
   name "MEFinder"
