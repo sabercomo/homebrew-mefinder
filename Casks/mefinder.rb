@@ -1,11 +1,8 @@
 cask "mefinder" do
-  arch arm: "arm64", intel: "x86_64"
+  version "0.6.2"
+  sha256 "7dd7e868f4e2c8073fe46fdf3e32908698e935f748474cb059d53cfb3ea2ec20"
 
-  version "0.6.1"
-  sha256 arm:   "c2a31f55ae59dd0896f4a18a6d9883426817caa8b10c3e440eccd0976538c6d9",
-         intel: "9ff2033d02cf6996d034d667e50fb8e1458dd2a3e48f440062c7a152f6b01087"
-
-  url "https://github.com/sabercomo/MEFinder/releases/download/v#{version}/MEFinder-v#{version}-macos-#{arch}.dmg"
+  url "https://github.com/sabercomo/MEFinder/releases/download/v#{version}/MEFinder-v#{version}-macos-arm64.dmg"
   name "MEFinder"
   desc "Local-first literature passage locator for PDF, DOCX and EPUB"
   homepage "https://github.com/sabercomo/MEFinder"
@@ -16,6 +13,7 @@ cask "mefinder" do
   end
 
   depends_on macos: :sonoma
+  depends_on arch: :arm64
 
   app "MEFinder.app"
 end
